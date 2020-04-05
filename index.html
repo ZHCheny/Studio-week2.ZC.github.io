@@ -12,9 +12,6 @@
       #mapId {
           height: 600px;
       }
-	  /*#mapDi {
-          height: 800px;
-      }*/
     /* Add a CSS rule that selects an element with the ID "mapId" and gives it a height of 600 pixels */
   </style>
   <!-- Adding styling info for page layout by reading in a CSS file -->
@@ -33,26 +30,19 @@
         <li><a href="Mapbox-gl-js-bm.html" target="_self">Output 4</a></li>
     </ul>
     <br>
-    <!-- <div id="mapId"> -->
+   <div id="mapId">
     <!-- Add a div with id="mapId" to give the map somewhere to go -->
-<!-- <script> -->
+<script> 
         <!-- Create a variable called "map" to house your Leaflet map and all of its functionality
-        var map = L.map('mapId').setView([37.754700, -122.420790], 14);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-</script>
-	</div>
-	<br>-->
-	<div id="mapId">
-<script>
-	  // Create a variable called "mapt" to house your Leaflet map and all of its functionality
-	var mapt = L.map('mapId').setView([37.754700, -122.420790], 14);
+        
+	var map = L.map('mapId').setView([37.754700, -122.420790], 14);
 	L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
 	maxZoom: 19}).addTo(map);
 
+</script>
+	
         /*
          * Use Leaflet's tileLayer method to create a new tile layer, then add it to the map
          ** Reference: https://leafletjs.com/reference-1.6.0.html#tilelayer
