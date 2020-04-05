@@ -2,20 +2,20 @@
 <html>
 
 <head>
-  <title>Studio Week 2</title>
-  <!-- Adding in the Leaflet CSS file -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
-  <!-- Adding Leaflet JavaScript file -->
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-  <!-- Adding styling info for the map -->
-  <style type="text/css">
-      #mapId {
-          height: 600px;
-      }
-    /* Add a CSS rule that selects an element with the ID "mapId" and gives it a height of 600 pixels */
-  </style>
-  <!-- Adding styling info for page layout by reading in a CSS file -->
-  <link rel="stylesheet" href="styles.css">
+    <title>Studio Week 2</title>
+    <!-- Adding in the Leaflet CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <!-- Adding Leaflet JavaScript file -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <!-- Adding styling info for the map -->
+    <style type="text/css">
+        #mapId {
+            height: 600px;
+        }
+        /* Add a CSS rule that selects an element with the ID "mapId" and gives it a height of 600 pixels */
+    </style>
+    <!-- Adding styling info for page layout by reading in a CSS file -->
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -30,17 +30,18 @@
         <li><a href="Mapbox-gl-js-bm.html" target="_self">Output 4</a></li>
     </ul>
     <br>
-   <div id="mapId"></div>
+    <div id="mapId"></div>
     <!-- Add a div with id="mapId" to give the map somewhere to go -->
-<script> 
+    <script>
+
       // Create a variable called "map" to house your Leaflet map and all of its functionality
-        
+
 	var map = L.map('mapId').setView([37.754700, -122.420790], 14);
-	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
-	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-	}).addTo(map);
-	
-	
+       L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+        }).addTo(map);
+
+
         /*
          * Use Leaflet's tileLayer method to create a new tile layer, then add it to the map
          ** Reference: https://leafletjs.com/reference-1.6.0.html#tilelayer
@@ -49,7 +50,7 @@
         /* Try changing out the tile source for something else. Hint: you can find
          * lots of tile sources here: https://leaflet-extras.github.io/leaflet-providers/preview/
          */
-</script>
+    </script>
 
 </body>
 
