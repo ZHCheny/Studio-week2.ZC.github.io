@@ -30,16 +30,16 @@
         <li><a href="Mapbox-gl-js-bm.html" target="_self">Output 4</a></li>
     </ul>
     <br>
-   <div id="mapId">
+   <div id="mapId"></div>
     <!-- Add a div with id="mapId" to give the map somewhere to go -->
 <script> 
       // Create a variable called "map" to house your Leaflet map and all of its functionality
         
 	var map = L.map('mapId').setView([37.754700, -122.420790], 14);
 	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
-	maxZoom: 20,
 	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 	}).addTo(map);
+	
 	
         /*
          * Use Leaflet's tileLayer method to create a new tile layer, then add it to the map
@@ -50,7 +50,7 @@
          * lots of tile sources here: https://leaflet-extras.github.io/leaflet-providers/preview/
          */
 </script>
-</div>
+
 </body>
 
 </html>
