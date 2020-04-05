@@ -32,3 +32,9 @@ li a:hover {
 .active {
  background-color: #a09f9f;
 }
+
+l {
+    font-size: 1em;
+    line-height: 0.9em;
+    color: #C4C4C4;
+}
